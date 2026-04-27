@@ -1,0 +1,137 @@
+/* Import Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+/* Body setup: center form */
+body {
+    background: #f4f6f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.auth-card {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+
+/* Heading */
+.auth-container h1 {
+    text-align: center;
+    margin-bottom: 36px; 
+    color: #333;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 22px; 
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1.1rem;
+}
+
+/* Inputs */
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 14px 14px 14px 42px; /* left padding for icon */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* rounded edges */
+    font-size: 1rem;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.auth-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.3);
+    outline: none;
+}
+
+/* Submit button */
+.auth-form button {
+    width: 100%;
+    padding: 14px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.auth-form button i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.auth-form button:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+}
+
+/* Remember me checkbox */
+.auth-form .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 0.98rem;
+}
+
+.auth-form .remember-me input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Error messages */
+.auth-errors,
+.auth-form small.text-danger {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #d8000c;
+}
+
+/* Footer links */
+.auth-form p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.auth-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-form a:hover {
+    text-decoration: underline;
+}
